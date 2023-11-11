@@ -1,0 +1,97 @@
+/**
+ * Author: Lasitha Weligampola Gedara
+ * Date: 2023/09/23
+ */
+
+body {
+  background-color: #fff7d9;
+  color: #222;
+  font-family: "Quicksand", Arial, Helvetica, sans-serif;
+}
+
+#root {
+  position: relative;
+  padding: 0 16px;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 20px);
+}
+
+.header {
+  position: relative;
+}
+
+#appIcon {
+  position: absolute;
+  left: 0;
+}
+.title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#newNotificationsForm {
+  padding: 0 4px;
+}
+
+#newNotificationsForm small {
+  color: #f54952;
+  display: none;
+}
+#newNotificationsForm small.active {
+  display: block !important;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.message {
+  display: none;
+  font-weight: 600;
+  margin: 16px;
+  border: 1px solid #f54952;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid black;
+  background: transparent;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+@media (min-width: 768px) {
+  #root {
+    padding: 0;
+    max-width: 768px;
+    margin: 0 auto;
+  }
+}
+
+button[type="submit"] {
+  background-color: transparent;
+  padding: 6px 16px;
+  margin-top: 24px;
+  border: 2px solid #1974d3;
+  border-radius: 12px;
+  position: relative;
+  float: right;
+  font-size: 16px;
+}
+
+button[type="button"] {
+  background-color: #1974d3;
+  padding: 6px 16px;
+  margin-top: 24px;
+  border-radius: 12px;
+  position: relative;
+  float: right;
+  font-size: 16px;
+  color: white;
+  margin-bottom: 21px;
+}
